@@ -20,7 +20,10 @@ const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-accent mx-auto rounded-full"></div>
           <p className="text-lg text-foreground/80 mt-6 max-w-2xl mx-auto">
-            Ready to bring your ideas to life? Let's discuss your next project and create something amazing together.
+            Looking for an <strong>affordable software developer in Bhubaneswar</strong> or a 
+            <strong> freelance full-stack developer in India</strong> to build your next website or app? 
+            I provide <strong>low-budget software solutions</strong> for startups, small businesses, and students. 
+            Let's collaborate and bring your project idea to life.
           </p>
         </div>
 
@@ -28,11 +31,13 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
+              <h3 className="text-2xl font-semibold mb-6">Let’s Connect</h3>
               <p className="text-foreground/80 mb-8 leading-relaxed">
-                I'm always interested in hearing about new opportunities, collaborations, 
-                and interesting projects. Whether you have a question or just want to say hi, 
-                I'll try my best to get back to you!
+                I’m always open to <strong>new projects, collaborations, and freelance work</strong>. 
+                Whether you need <strong>affordable web development services</strong>, 
+                <strong> custom app development</strong>, or just want to ask a question, 
+                feel free to reach out. I usually respond quickly and would love to discuss 
+                how I can help with your next idea.
               </p>
             </div>
 
@@ -63,7 +68,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">Location</h4>
-                  <p className="text-muted-foreground">Bhubaneswar, Odisha 751001</p>
+                  <p className="text-muted-foreground">
+                    Bhubaneswar, Odisha 751001, India
+                  </p>
                 </div>
               </div>
             </div>
@@ -93,7 +100,7 @@ const Contact = () => {
               <div>
                 <label className="text-sm font-medium mb-2 block">Subject</label>
                 <Input 
-                  placeholder="What's this about?" 
+                  placeholder="Project, Collaboration, or Question" 
                   className="bg-background/50 border-primary/30 focus:border-primary"
                 />
               </div>
@@ -101,7 +108,7 @@ const Contact = () => {
               <div>
                 <label className="text-sm font-medium mb-2 block">Message</label>
                 <Textarea 
-                  placeholder="Tell me about your project..." 
+                  placeholder="Tell me about your project, business idea, or requirement..." 
                   rows={5}
                   className="bg-background/50 border-primary/30 focus:border-primary resize-none"
                 />

@@ -7,105 +7,145 @@ const Projects = () => {
   const projects = [
     {
       title: "Leave Management System",
-      description: "Developed a user-friendly interface for employees to apply for leave and track their requests. Implemented MySQL for database management, achieving efficient data storage and retrieval. Created responsive web pages using Bootstrap, ensuring accessibility across devices.",
-      image: "/placeholder.svg",
+      description:
+        "A complete leave management platform with employee self-service portal. Features include leave application, tracking, and admin approval workflows. Built with MySQL for data reliability and Bootstrap for mobile responsiveness.",
+      image: "/projects/leave-management.png",
       technologies: ["Java", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: true
+      featured: true,
     },
     {
       title: "Online MCQ Test",
-      description: "Developed a dynamic interface for users to take quizzes and receive instant feedback on their performance. Implemented Oracle for database management, achieving reliable data storage and query efficiency. Created responsive web pages using HTML, CSS, and JavaScript.",
-      image: "/placeholder.svg", 
+      description:
+        "A dynamic quiz system providing instant feedback and performance tracking. Powered by Oracle DB for scalability and responsive UI with vanilla JS & CSS.",
+      image: "/projects/mcq-test.png",
       technologies: ["Java", "HTML", "CSS", "JavaScript", "Oracle"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: true
+      featured: true,
     },
     {
       title: "Pharmacy Shop Management System",
-      description: "Developed an intuitive interface for managing pharmacy inventory, sales transactions, and customer records. Implemented MySQL for database management, achieving efficient tracking of stock levels and sales data.",
-      image: "/placeholder.svg",
+      description:
+        "Inventory and sales management system for pharmacies. Enabled product tracking, billing, and sales reports with MySQL backend.",
+      image: "/projects/pharmacy.png",
       technologies: ["PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: false
+      featured: false,
     },
     {
       title: "SuiteCRM Custom Modules",
-      description: "Developed custom modules in SuiteCRM, reducing manual data entry by 30% and optimizing workflows. Implemented CRM solutions that improved user engagement by 25%.",
-      image: "/placeholder.svg",
+      description:
+        "Customized SuiteCRM modules to reduce manual data entry by 30%. Enhanced user workflows and reporting dashboards with PHP & MySQL.",
+      image: "/projects/suitecrm.png",
       technologies: ["PHP", "MySQL", "SuiteCRM", "JavaScript"],
-      liveUrl: "#", 
+      liveUrl: "#",
       githubUrl: "#",
-      featured: false
+      featured: false,
     },
     {
       title: "Patient Management System",
-      description: "Built ERP modules including Patient Management, Gate Pass Management, Leave Request, Tracking App using Google Maps API, and 2050 Healthcare platform with modern design and service delivery.",
-      image: "/placeholder.svg",
+      description:
+        "ERP modules covering patient records, gate pass management, leave requests, and GPS tracking (Google Maps API). Designed for healthcare efficiency.",
+      image: "/projects/patient.png",
       technologies: ["PHP", "MySQL", "Google Maps API", "JavaScript", "HTML", "CSS"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: false
+      featured: false,
     },
     {
-      title: "Flutter Mobile App",
-      description: "Led development of IIG People, a Flutter app with Google login and past management features. Created secure authentication systems using JWT and React Vite for login, registration, and token management.",
-      image: "/placeholder.svg",
+      title: "Flutter Mobile App - IIG People",
+      description:
+        "Cross-platform mobile app with secure Google login, JWT authentication, and token-based session handling. Integrated React + Vite for backend dashboard.",
+      image: "/projects/flutter-app.png",
       technologies: ["Flutter", "Google Login", "JWT", "React", "Vite"],
       liveUrl: "#",
       githubUrl: "#",
-      featured: false
-    }
+      featured: false,
+    },
   ];
 
-  const featuredProjects = projects.filter(p => p.featured);
-  const otherProjects = projects.filter(p => !p.featured);
+  const featuredProjects = projects.filter((p) => p.featured);
+  const otherProjects = projects.filter((p) => !p.featured);
 
   return (
-    <section id="projects" className="py-20 px-6">
+    <section id="projects" className="py-20 px-6 bg-secondary/10">
       <div className="max-w-6xl mx-auto">
+        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Featured <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
+            My <span className="bg-gradient-primary bg-clip-text text-transparent">Projects</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
+          <p className="mt-6 text-foreground/70 max-w-2xl mx-auto text-lg">
+            A showcase of my <strong>full-stack development work</strong>, ranging from web apps to mobile applications.
+          </p>
         </div>
 
         {/* Featured Projects */}
         <div className="space-y-12 mb-20">
           {featuredProjects.map((project, index) => (
-            <Card 
+            <Card
               key={project.title}
-              className={`overflow-hidden bg-gradient-card border-primary/20 shadow-card hover:shadow-glow transition-all duration-500 ${
-                index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-              } flex flex-col md:flex`}
+              className={`overflow-hidden bg-gradient-card border-primary/20 shadow-card hover:shadow-glow transition-all duration-500 flex flex-col md:flex ${
+                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              }`}
             >
-              <div className="md:w-1/2 h-64 md:h-auto bg-muted/20 flex items-center justify-center">
-                <div className="text-4xl text-muted-foreground">📱</div>
+              {/* Project Image */}
+              <div className="md:w-1/2 h-64 md:h-auto flex items-center justify-center bg-muted/20">
+                {project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="text-4xl text-muted-foreground">📱</div>
+                )}
               </div>
+
+              {/* Project Content */}
               <div className="md:w-1/2 p-8 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold mb-4 text-primary">{project.title}</h3>
                 <p className="text-foreground/80 mb-6 leading-relaxed">{project.description}</p>
-                
+
+                {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary" className="hover:bg-primary/20 hover:text-primary">
+                    <Badge
+                      key={tech}
+                      variant="secondary"
+                      className="hover:bg-primary/20 hover:text-primary"
+                    >
                       {tech}
                     </Badge>
                   ))}
                 </div>
-                
+
+                {/* Links */}
                 <div className="flex space-x-4">
-                  <Button className="bg-gradient-primary hover:shadow-glow">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    Live Demo
+                  <Button
+                    asChild
+                    className="bg-gradient-primary hover:shadow-glow"
+                    aria-label={`Live demo of ${project.title}`}
+                  >
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <ExternalLink className="mr-2 h-4 w-4" />
+                      Live Demo
+                    </a>
                   </Button>
-                  <Button variant="outline" className="border-primary/30 hover:border-primary hover:bg-primary/10">
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="border-primary/30 hover:border-primary hover:bg-primary/10"
+                    aria-label={`Source code of ${project.title}`}
+                  >
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </a>
                   </Button>
                 </div>
               </div>
@@ -113,22 +153,33 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Other Projects Grid */}
+        {/* Other Projects */}
         <div>
           <h3 className="text-2xl font-semibold text-center mb-12">More Projects</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {otherProjects.map((project) => (
-              <Card 
+              <Card
                 key={project.title}
                 className="overflow-hidden bg-gradient-card border-primary/20 shadow-card hover:shadow-glow hover:scale-105 transition-all duration-300"
               >
-                <div className="h-48 bg-muted/20 flex items-center justify-center">
-                  <div className="text-3xl text-muted-foreground">⚡</div>
+                <div className="h-48 flex items-center justify-center bg-muted/20">
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="text-3xl text-muted-foreground">⚡</div>
+                  )}
                 </div>
                 <div className="p-6">
                   <h4 className="text-xl font-semibold mb-3 text-primary">{project.title}</h4>
-                  <p className="text-foreground/80 mb-4 text-sm leading-relaxed">{project.description}</p>
-                  
+                  <p className="text-foreground/80 mb-4 text-sm leading-relaxed">
+                    {project.description}
+                  </p>
+
+                  {/* Tech Badges */}
                   <div className="flex flex-wrap gap-1 mb-4">
                     {project.technologies.map((tech) => (
                       <Badge key={tech} variant="secondary" className="text-xs">
@@ -136,15 +187,31 @@ const Projects = () => {
                       </Badge>
                     ))}
                   </div>
-                  
+
+                  {/* Links */}
                   <div className="flex space-x-2">
-                    <Button size="sm" className="flex-1">
-                      <ExternalLink className="mr-1 h-3 w-3" />
-                      Demo
+                    <Button
+                      asChild
+                      size="sm"
+                      className="flex-1"
+                      aria-label={`Live demo of ${project.title}`}
+                    >
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="mr-1 h-3 w-3" />
+                        Demo
+                      </a>
                     </Button>
-                    <Button size="sm" variant="outline" className="flex-1">
-                      <Github className="mr-1 h-3 w-3" />
-                      Code
+                    <Button
+                      asChild
+                      size="sm"
+                      variant="outline"
+                      className="flex-1"
+                      aria-label={`Source code of ${project.title}`}
+                    >
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="mr-1 h-3 w-3" />
+                        Code
+                      </a>
                     </Button>
                   </div>
                 </div>

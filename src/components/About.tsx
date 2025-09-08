@@ -14,18 +14,33 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-foreground/80 leading-relaxed">
-              I'm a meticulous software professional seeking a role in a dynamic industry where I can continuously enhance my skills 
-              and drive the company's growth and success. With 1+ year of experience in the software development lifecycle, 
-              I excel in gathering and defining requirements, managing documentation, and optimizing code for efficient solutions.
+              I’m <strong>Umasankar Dash</strong>, a passionate 
+              <strong> Full-Stack Developer based in Bhubaneswar, Odisha</strong>, 
+              specializing in <strong>affordable software solutions</strong> and 
+              <strong> low-cost web and app development</strong>. With 
+              <strong> 1+ years of experience</strong>, I help startups, 
+              small businesses, and students bring their ideas to life by 
+              delivering <strong>custom, budget-friendly projects</strong> 
+              without compromising quality.
             </p>
+
             <p className="text-lg text-foreground/80 leading-relaxed">
-              Currently working as a Software Developer at IIC Technology in Bhubaneswar, Odisha, I have developed custom modules 
-              in SuiteCRM, optimized workflows, and built comprehensive applications including Patient Management systems, 
-              Gate Pass Management, and healthcare platforms using modern technologies.
+              Currently working as a <strong>Software Developer at IIC Technology</strong>, 
+              I have hands-on experience in developing <strong>SuiteCRM modules</strong>, 
+              <strong> patient management systems</strong>, <strong>gate pass solutions</strong>, 
+              and <strong>custom healthcare platforms</strong>. I use 
+              modern technologies like React, Laravel, Node.js, and MongoDB 
+              to create <strong>scalable, performance-driven applications</strong>.
             </p>
+
             <p className="text-lg text-foreground/80 leading-relaxed">
-              I take a proactive approach to problem-solving, continuously seeking new challenges and opportunities to learn and grow. 
-              I thrive in team-oriented environments and excel at leveraging my strengths to contribute to the team's overall success.
+              As a <strong>freelance full-stack developer in India</strong>, I also 
+              provide <strong>low-budget website development</strong>, 
+              <strong> affordable mobile apps</strong>, and <strong>student projects 
+              for free or minimal cost</strong> to support learning and innovation. 
+              My approach combines clean coding, proactive problem-solving, and 
+              staying up-to-date with industry trends to ensure clients receive 
+              the <strong>best value software solutions</strong>.
             </p>
             
             <div className="grid grid-cols-2 gap-6 pt-6">
@@ -60,15 +75,17 @@ const About = () => {
                 <h4 className="font-semibold text-accent mb-3">Strengths</h4>
                 <ul className="text-sm text-foreground/80 space-y-1">
                   <li>• Proactive approach to problem-solving</li>
-                  <li>• Team-oriented environment excellence</li>
+                  <li>• Delivering affordable software development</li>
                   <li>• Passionate about continuous learning</li>
-                  <li>• Committed to staying up-to-date with industry trends</li>
+                  <li>• Skilled in web, mobile & CRM systems</li>
                 </ul>
               </div>
               
               <div className="pt-4 border-t border-primary/20">
                 <h4 className="font-semibold text-accent mb-3">Hobbies</h4>
-                <p className="text-sm text-foreground/80">Active in Social Media, Reading, Photography</p>
+                <p className="text-sm text-foreground/80">
+                  Active in Social Media, Reading, Photography
+                </p>
               </div>
             </div>
           </Card>
