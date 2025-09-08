@@ -25,7 +25,7 @@ const About = () => {
             </p>
 
             <p className="text-lg text-foreground/80 leading-relaxed">
-              Currently working as a <strong>Software Developer at IIC Technology</strong>, 
+              Currently working as a <strong>Software Developer at IIG Technology</strong>, 
               I have hands-on experience in developing <strong>SuiteCRM modules</strong>, 
               <strong> patient management systems</strong>, <strong>gate pass solutions</strong>, 
               and <strong>custom healthcare platforms</strong>. I use 
