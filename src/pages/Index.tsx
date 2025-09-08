@@ -27,11 +27,20 @@ const Index = () => {
       </main>
       
       {/* Footer */}
-      <footer className="py-8 text-center border-t border-primary/20">
-        <p className="text-muted-foreground">
-          © 2024 Umasankar Soubhagya Kumar Dash.
-        </p>
-      </footer>
+     <footer className="py-8 text-center border-t border-primary/20">
+  <p className="text-muted-foreground">
+    © 2024 Umasankar Soubhagya Kumar Dash.{" "}
+    <a
+      href="https://www.linkedin.com/in/umasankar-dash-a1b5b3202/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:underline"
+    >
+      LinkedIn
+    </a>
+  </p>
+</footer>
+
     </div>
   );
 };
