@@ -61,7 +61,7 @@ const Hero = () => {
               className="border-primary/30 hover:border-primary hover:bg-primary/10 text-lg px-8 py-6"
               onClick={() =>
                 window.open(
-                  "/lovable-uploads/fd574d83-eda2-4dfd-859b-d7ae63493b6c.png",
+                  "/fd574d83-eda2-4dfd-859b-d7ae63493b6c.png",
                   "_blank"
                 )
               }
