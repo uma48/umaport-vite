@@ -9,7 +9,7 @@ const Projects = () => {
       title: "Leave Management System",
       description:
         "A full-stack leave management system with employee portal, leave application, tracking, and admin approval workflows. Built with MySQL for reliability and Bootstrap for responsive design.()",
-      image: "/leave_manage_pr.jpg",
+      image: "/leave_manage_pr.webp",
       technologies: ["Java", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"],
       liveUrl: "#",
       githubUrl: "#",
@@ -19,7 +19,7 @@ const Projects = () => {
       title: "Online MCQ Test Platform",
       description:
         "A dynamic quiz system with instant feedback, timer-based exams, and performance tracking. Powered by Oracle DB for scalability and optimized with responsive UI.",
-      image: "/mcq.jpg",
+      image: "./mcq.webp",
       technologies: ["Java", "HTML", "CSS", "JavaScript", "Oracle"],
       liveUrl: "#",
       githubUrl: "#",
@@ -29,7 +29,7 @@ const Projects = () => {
       title: "Pharmacy Shop Management System",
       description:
         "Inventory and billing solution for pharmacies. Enabled product tracking, billing automation, and detailed sales reports using PHP & MySQL backend.",
-      image: "pharmacy.jpg",
+      image: "pharmacy.webp",
       technologies: ["PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"],
       liveUrl: "#",
       githubUrl: "#",
@@ -39,7 +39,7 @@ const Projects = () => {
       title: "SuiteCRM Custom Modules",
       description:
         "Developed and customized SuiteCRM modules to streamline workflows and improve reporting. Reduced manual data entry by 30% with PHP & MySQL.",
-      image: "/crm.jpg",
+      image: "/crm.webp",
       technologies: ["PHP", "MySQL", "SuiteCRM", "JavaScript"],
       liveUrl: "#",
       githubUrl: "#",
@@ -49,7 +49,7 @@ const Projects = () => {
       title: "Patient Management System",
       description:
         "Healthcare ERP with patient records, gate pass management, leave tracking, and GPS tracking integration using Google Maps API.",
-      image: "/hms.jpg",
+      image: "/hms.webp",
       technologies: ["PHP", "MySQL", "Google Maps API", "JavaScript", "HTML", "CSS"],
       liveUrl: "#",
       githubUrl: "#",
@@ -59,7 +59,7 @@ const Projects = () => {
       title: "Flutter Mobile App - IIG People",
       description:
         "Cross-platform mobile app with Google login, JWT authentication, and token-based session handling. Backend dashboard built with React + Vite.",
-      image: "/app.jpg",
+      image: "/app.webp",
       technologies: ["Flutter", "Google Login", "JWT", "React", "Vite"],
       liveUrl: "#",
       githubUrl: "#",
