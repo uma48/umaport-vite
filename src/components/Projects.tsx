@@ -2,24 +2,24 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
-
+<a href="https://www.freepik.com/free-photo/executive-touching-icon-social-network_970014.htm">Image by jannoon028 on Freepik</a>
 const Projects = () => {
   const projects = [
     {
       title: "Leave Management System",
       description:
-        "A complete leave management platform with employee self-service portal. Features include leave application, tracking, and admin approval workflows. Built with MySQL for data reliability and Bootstrap for mobile responsiveness.",
-      image: "/projects/leave-management.png",
+        "A full-stack leave management system with employee portal, leave application, tracking, and admin approval workflows. Built with MySQL for reliability and Bootstrap for responsive design.()",
+      image: "/leave_manage_pr.jpg",
       technologies: ["Java", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true,
     },
     {
-      title: "Online MCQ Test",
+      title: "Online MCQ Test Platform",
       description:
-        "A dynamic quiz system providing instant feedback and performance tracking. Powered by Oracle DB for scalability and responsive UI with vanilla JS & CSS.",
-      image: "/projects/mcq-test.png",
+        "A dynamic quiz system with instant feedback, timer-based exams, and performance tracking. Powered by Oracle DB for scalability and optimized with responsive UI.",
+      image: "/mcq.jpg",
       technologies: ["Java", "HTML", "CSS", "JavaScript", "Oracle"],
       liveUrl: "#",
       githubUrl: "#",
@@ -28,8 +28,8 @@ const Projects = () => {
     {
       title: "Pharmacy Shop Management System",
       description:
-        "Inventory and sales management system for pharmacies. Enabled product tracking, billing, and sales reports with MySQL backend.",
-      image: "/projects/pharmacy.png",
+        "Inventory and billing solution for pharmacies. Enabled product tracking, billing automation, and detailed sales reports using PHP & MySQL backend.",
+      image: "pharmacy.jpg",
       technologies: ["PHP", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"],
       liveUrl: "#",
       githubUrl: "#",
@@ -38,8 +38,8 @@ const Projects = () => {
     {
       title: "SuiteCRM Custom Modules",
       description:
-        "Customized SuiteCRM modules to reduce manual data entry by 30%. Enhanced user workflows and reporting dashboards with PHP & MySQL.",
-      image: "/projects/suitecrm.png",
+        "Developed and customized SuiteCRM modules to streamline workflows and improve reporting. Reduced manual data entry by 30% with PHP & MySQL.",
+      image: "/crm.jpg",
       technologies: ["PHP", "MySQL", "SuiteCRM", "JavaScript"],
       liveUrl: "#",
       githubUrl: "#",
@@ -48,8 +48,8 @@ const Projects = () => {
     {
       title: "Patient Management System",
       description:
-        "ERP modules covering patient records, gate pass management, leave requests, and GPS tracking (Google Maps API). Designed for healthcare efficiency.",
-      image: "/projects/patient.png",
+        "Healthcare ERP with patient records, gate pass management, leave tracking, and GPS tracking integration using Google Maps API.",
+      image: "/hms.jpg",
       technologies: ["PHP", "MySQL", "Google Maps API", "JavaScript", "HTML", "CSS"],
       liveUrl: "#",
       githubUrl: "#",
@@ -58,8 +58,8 @@ const Projects = () => {
     {
       title: "Flutter Mobile App - IIG People",
       description:
-        "Cross-platform mobile app with secure Google login, JWT authentication, and token-based session handling. Integrated React + Vite for backend dashboard.",
-      image: "/projects/flutter-app.png",
+        "Cross-platform mobile app with Google login, JWT authentication, and token-based session handling. Backend dashboard built with React + Vite.",
+      image: "/app.jpg",
       technologies: ["Flutter", "Google Login", "JWT", "React", "Vite"],
       liveUrl: "#",
       githubUrl: "#",
@@ -71,7 +71,11 @@ const Projects = () => {
   const otherProjects = projects.filter((p) => !p.featured);
 
   return (
-    <section id="projects" className="py-20 px-6 bg-secondary/10">
+    <section
+      id="projects"
+      className="py-20 px-6 bg-secondary/10"
+      aria-label="Portfolio projects of Umasankar Dash"
+    >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -80,7 +84,9 @@ const Projects = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-primary mx-auto rounded-full"></div>
           <p className="mt-6 text-foreground/70 max-w-2xl mx-auto text-lg">
-            A showcase of my <strong>full-stack development work</strong>, ranging from web apps to mobile applications.
+            A showcase of{" "}
+            <strong>Umasankar Dash’s full-stack development work</strong>, ranging
+            from enterprise web apps to mobile solutions.
           </p>
         </div>
 
@@ -98,7 +104,7 @@ const Projects = () => {
                 {project.image ? (
                   <img
                     src={project.image}
-                    alt={project.title}
+                    alt={`${project.title} project by Umasankar Dash`}
                     className="w-full h-full object-cover"
                   />
                 ) : (
@@ -108,8 +114,12 @@ const Projects = () => {
 
               {/* Project Content */}
               <div className="md:w-1/2 p-8 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold mb-4 text-primary">{project.title}</h3>
-                <p className="text-foreground/80 mb-6 leading-relaxed">{project.description}</p>
+                <h3 className="text-2xl font-bold mb-4 text-primary">
+                  {project.title}
+                </h3>
+                <p className="text-foreground/80 mb-6 leading-relaxed">
+                  {project.description}
+                </p>
 
                 {/* Tech Stack */}
                 <div className="flex flex-wrap gap-2 mb-6">
@@ -155,7 +165,9 @@ const Projects = () => {
 
         {/* Other Projects */}
         <div>
-          <h3 className="text-2xl font-semibold text-center mb-12">More Projects</h3>
+          <h3 className="text-2xl font-semibold text-center mb-12">
+            More Projects by Umasankar Dash
+          </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {otherProjects.map((project) => (
               <Card
@@ -166,7 +178,7 @@ const Projects = () => {
                   {project.image ? (
                     <img
                       src={project.image}
-                      alt={project.title}
+                      alt={`${project.title} project by Umasankar Dash`}
                       className="w-full h-full object-cover"
                     />
                   ) : (
@@ -174,7 +186,9 @@ const Projects = () => {
                   )}
                 </div>
                 <div className="p-6">
-                  <h4 className="text-xl font-semibold mb-3 text-primary">{project.title}</h4>
+                  <h4 className="text-xl font-semibold mb-3 text-primary">
+                    {project.title}
+                  </h4>
                   <p className="text-foreground/80 mb-4 text-sm leading-relaxed">
                     {project.description}
                   </p>

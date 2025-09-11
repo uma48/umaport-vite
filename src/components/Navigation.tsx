@@ -20,6 +20,8 @@ const Navigation = () => {
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
     { name: 'Projects', href: '#projects' },
+  { name: 'Blogs', href: '/blogs' }, // React Router path
+
     { name: 'Contact', href: '#contact' },
   ];
 

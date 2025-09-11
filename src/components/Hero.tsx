@@ -16,6 +16,8 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
+        role="img"
+        aria-label="Background illustration for Umasankar Dash portfolio"
       >
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/70 to-background/95" />
       </div>
@@ -26,8 +28,11 @@ const Hero = () => {
           {/* Heading */}
           <div className="space-y-3">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold bg-gradient-hero bg-clip-text text-transparent leading-snug sm:leading-tight">
-              Umasankar Soubhagya Kumar Dash
+              Umasankar Dash
             </h1>
+            <p className="text-base md:text-lg text-muted-foreground">
+              Official portfolio of <strong>Umasankar Dash</strong>, Full-Stack Developer based in India
+            </p>
             <h2 className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-medium">
               Software Developer & Full-Stack Engineer
             </h2>
@@ -35,10 +40,11 @@ const Hero = () => {
 
           {/* Short Intro */}
           <p className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto leading-relaxed">
-            Passionate <strong>Full-Stack Developer</strong> with{" "}
+            Hi, I’m <strong>Umasankar Dash</strong>, a passionate{" "}
+            <strong>Full-Stack Developer</strong> with{" "}
             <strong>1+ years of experience</strong> building scalable web
-            applications. Seeking opportunities to contribute technical expertise,
-            solve complex problems, and grow with innovative teams.
+            applications. I specialize in delivering modern, affordable, and
+            efficient software solutions for businesses and individuals.
           </p>
 
           {/* CTA Buttons */}
@@ -62,7 +68,8 @@ const Hero = () => {
               onClick={() =>
                 window.open(
                   "/fd574d83-eda2-4dfd-859b-d7ae63493b6c.png",
-                  "_blank"
+                  "_blank",
+                  "noopener,noreferrer"
                 )
               }
             >
@@ -78,7 +85,9 @@ const Hero = () => {
               size="icon"
               aria-label="GitHub Profile"
               className="hover:text-primary hover:scale-110 transition-all"
-              onClick={() => window.open("https://github.com/uma548", "_blank")}
+              onClick={() =>
+                window.open("https://github.com/uma48", "_blank", "noopener,noreferrer")
+              }
             >
               <Github className="h-6 w-6" />
             </Button>
@@ -88,7 +97,7 @@ const Hero = () => {
               aria-label="LinkedIn Profile"
               className="hover:text-primary hover:scale-110 transition-all"
               onClick={() =>
-                window.open("https://linkedin.com/in/umasankar-dash", "_blank")
+                window.open("https://linkedin.com/in/umasankar-dash", "_blank", "noopener,noreferrer")
               }
             >
               <Linkedin className="h-6 w-6" />

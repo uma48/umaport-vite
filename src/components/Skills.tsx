@@ -10,25 +10,25 @@ const Skills = () => {
         "React", "Next.js", "TypeScript", "Tailwind CSS",
         "Vue.js", "HTML5", "CSS3", "JavaScript"
       ],
-      description: "Building modern, responsive, and high-performance user interfaces using React, Next.js, and Vue.js."
+      description: "Building modern, SEO-friendly, and high-performance user interfaces using React, Next.js, and Vue.js."
     },
     {
       title: "Backend Development",
       gradient: "bg-gradient-accent",
       skills: [
-        "Node.js", "Express", "Python", "PostgreSQL",
-        "MongoDB", "GraphQL", "REST APIs", "Docker"
+        "Node.js", "Express", "Laravel", "PHP",
+        "MongoDB", "MySQL", "PostgreSQL", "REST APIs"
       ],
-      description: "Designing and maintaining scalable backend systems with databases, APIs, and cloud-native solutions."
+      description: "Designing and maintaining scalable backend systems with Node.js, Laravel, and secure database architectures."
     },
     {
       title: "Tools & DevOps",
       gradient: "bg-gradient-primary",
       skills: [
         "Git", "AWS", "Firebase", "Linux",
-        "CI/CD", "Figma", "Testing", "Agile"
+        "CI/CD", "Docker", "Figma", "Agile"
       ],
-      description: "Using modern tools, cloud services, and agile practices to deliver robust and production-ready applications."
+      description: "Using cloud platforms, version control, and DevOps practices to deliver production-ready applications."
     }
   ];
 
@@ -42,8 +42,10 @@ const Skills = () => {
             Technical <span className="bg-gradient-accent bg-clip-text text-transparent">Skills</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Expertise across <strong>frontend development</strong>, <strong>backend technologies</strong>, 
-            and <strong>DevOps tools</strong> to deliver end-to-end software solutions.
+            As <strong>Umasankar Dash, a Full-Stack Developer based in Bhubaneswar, India</strong>, 
+            I bring expertise across <strong>frontend development</strong>, 
+            <strong> backend technologies</strong>, and <strong>DevOps tools</strong> 
+            to deliver end-to-end software solutions.
           </p>
           <div className="w-24 h-1 bg-gradient-accent mx-auto rounded-full mt-4"></div>
         </header>
@@ -54,7 +56,7 @@ const Skills = () => {
             <Card
               key={category.title}
               className="p-6 bg-gradient-card border-primary/20 shadow-card hover:shadow-glow transition-all duration-300 hover:scale-105"
-              aria-label={`${category.title} skills`}
+              aria-label={`${category.title} skills of Umasankar Dash`}
             >
               <div className="text-center mb-6">
                 <div className={`w-16 h-16 ${category.gradient} rounded-full mx-auto mb-4 flex items-center justify-center`}>
@@ -94,15 +96,15 @@ const Skills = () => {
               </div>
               <div className="flex-1">
                 <h4 className="text-xl font-semibold text-primary">
-                  Senior Full-Stack Developer
+                  Software Developer – IIG Technology
                 </h4>
                 <p className="text-muted-foreground mb-2">
-                  Tech Company • 2022 - Present
+                  Bhubaneswar, India • 2024 – Present
                 </p>
                 <p className="text-foreground/80">
-                  Leading the development of scalable full-stack applications, 
-                  architecting solutions with <strong>React</strong>, <strong>Node.js</strong>, 
-                  and <strong>cloud technologies</strong>, while mentoring junior developers.
+                  Working on <strong>SuiteCRM modules</strong>, <strong>healthcare platforms</strong>, 
+                  and <strong>enterprise software solutions</strong> using 
+                  <strong> React</strong>, <strong>Laravel</strong>, and <strong>Node.js</strong>.
                 </p>
               </div>
             </div>
@@ -114,15 +116,15 @@ const Skills = () => {
               </div>
               <div className="flex-1">
                 <h4 className="text-xl font-semibold text-accent">
-                  Frontend Developer
+                  Freelance Full-Stack Developer
                 </h4>
                 <p className="text-muted-foreground mb-2">
-                  Digital Agency • 2020 - 2022
+                  India • 2022 – Present
                 </p>
                 <p className="text-foreground/80">
-                  Built responsive and SEO-friendly web applications for clients, 
-                  optimizing performance and accessibility using <strong>React</strong> 
-                  and <strong>modern JavaScript frameworks</strong>.
+                  Helping startups and students with <strong>affordable websites</strong>, 
+                  <strong> mobile applications</strong>, and <strong>custom projects</strong> 
+                  while focusing on <strong>scalability</strong> and <strong>low-cost software development</strong>.
                 </p>
               </div>
             </div>

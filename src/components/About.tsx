@@ -13,40 +13,42 @@ const About = () => {
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
+            {/* Intro */}
             <p className="text-lg text-foreground/80 leading-relaxed">
-              I’m <strong>Umasankar Dash</strong>, a passionate 
-              <strong> Full-Stack Developer based in Bhubaneswar, Odisha</strong>, 
-              specializing in <strong>affordable software solutions</strong> and 
-              <strong> low-cost web and app development</strong>. With 
-              <strong> 1+ years of experience</strong>, I help startups, 
-              small businesses, and students bring their ideas to life by 
-              delivering <strong>custom, budget-friendly projects</strong> 
-              without compromising quality.
+              Welcome to the <strong>official portfolio of Umasankar Dash</strong>.  
+              I’m <strong>Umasankar Dash</strong>, a dedicated 
+              <strong> Full-Stack Developer from Bhubaneswar, Odisha, India</strong>.  
+              I specialize in <strong>affordable web applications, mobile apps, and 
+              custom software development</strong>. With <strong>1+ years of professional 
+              experience</strong>, I help startups, small businesses, and students 
+              bring their digital ideas to life with <strong>budget-friendly and 
+              high-quality solutions</strong>.
             </p>
 
+            {/* Experience */}
             <p className="text-lg text-foreground/80 leading-relaxed">
-              Currently working as a <strong>Software Developer at IIG Technology</strong>, 
-              I have hands-on experience in developing <strong>SuiteCRM modules</strong>, 
-              <strong> patient management systems</strong>, <strong>gate pass solutions</strong>, 
-              and <strong>custom healthcare platforms</strong>. I use 
-              modern technologies like React, Laravel, Node.js, and MongoDB 
-              to create <strong>scalable, performance-driven applications</strong>.
+              Currently, I work as a <strong>Software Developer at IIG Technology</strong>, 
+              where I’ve built <strong>SuiteCRM modules</strong>, 
+              <strong> healthcare management platforms</strong>, 
+              <strong> gate pass solutions</strong>, and <strong>patient management systems</strong>.  
+              My tech stack includes <strong>React, Next.js, Laravel, Node.js, and MongoDB</strong>, 
+              enabling me to deliver <strong>modern, scalable, and performance-driven applications</strong>.
             </p>
 
+            {/* Freelance + Mission */}
             <p className="text-lg text-foreground/80 leading-relaxed">
-              As a <strong>freelance full-stack developer in India</strong>, I also 
-              provide <strong>low-budget website development</strong>, 
-              <strong> affordable mobile apps</strong>, and <strong>student projects 
-              for free or minimal cost</strong> to support learning and innovation. 
-              My approach combines clean coding, proactive problem-solving, and 
-              staying up-to-date with industry trends to ensure clients receive 
-              the <strong>best value software solutions</strong>.
+              Alongside my full-time role, I also work as a <strong>freelance full-stack 
+              developer in India</strong>. I provide <strong>low-cost websites, affordable 
+              mobile apps</strong>, and <strong>student projects</strong> to support learning 
+              and innovation. My mission is to make <strong>professional-grade technology 
+              accessible to everyone</strong>.
             </p>
             
+            {/* Highlights */}
             <div className="grid grid-cols-2 gap-6 pt-6">
               <div>
                 <h3 className="text-2xl font-bold text-primary mb-2">1+</h3>
-                <p className="text-muted-foreground">Years Experience</p>
+                <p className="text-muted-foreground">Years of Experience</p>
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-accent mb-2">10+</h3>
@@ -55,18 +57,19 @@ const About = () => {
             </div>
           </div>
           
+          {/* Personal Details */}
           <Card className="p-8 bg-gradient-card border-primary/20 shadow-card">
             <h3 className="text-2xl font-semibold mb-6 text-center">Personal Details</h3>
             <div className="space-y-4">
               <div className="grid md:grid-cols-2 gap-4 text-sm">
                 <div>
-                  <p><span className="font-semibold text-primary">Father's Name:</span> Umesh Chandra Dash</p>
-                  <p><span className="font-semibold text-primary">Mother's Name:</span> Manorama Dash</p>
+                  <p><span className="font-semibold text-primary">Full Name:</span> Umasankar Dash</p>
                   <p><span className="font-semibold text-primary">DOB:</span> 19/12/2000</p>
+                  <p><span className="font-semibold text-primary">Nationality:</span> Indian</p>
                 </div>
                 <div>
-                  <p><span className="font-semibold text-primary">Nationality:</span> Indian</p>
                   <p><span className="font-semibold text-primary">Languages:</span> English, Hindi, Odia</p>
+                  <p><span className="font-semibold text-primary">Current City:</span> Bhubaneswar, Odisha</p>
                   <p><span className="font-semibold text-primary">Marital Status:</span> Single</p>
                 </div>
               </div>
@@ -74,17 +77,17 @@ const About = () => {
               <div className="pt-4 border-t border-primary/20">
                 <h4 className="font-semibold text-accent mb-3">Strengths</h4>
                 <ul className="text-sm text-foreground/80 space-y-1">
-                  <li>• Proactive approach to problem-solving</li>
-                  <li>• Delivering affordable software development</li>
+                  <li>• Strong problem-solving & clean coding practices</li>
+                  <li>• Expertise in full-stack development (React, Laravel, Node.js)</li>
                   <li>• Passionate about continuous learning</li>
-                  <li>• Skilled in web, mobile & CRM systems</li>
+                  <li>• Focused on affordable, value-driven software</li>
                 </ul>
               </div>
               
               <div className="pt-4 border-t border-primary/20">
                 <h4 className="font-semibold text-accent mb-3">Hobbies</h4>
                 <p className="text-sm text-foreground/80">
-                  Active in Social Media, Reading, Photography
+                  Reading, Photography, Exploring Technology, Active on Social Media
                 </p>
               </div>
             </div>
